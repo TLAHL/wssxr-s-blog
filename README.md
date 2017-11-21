@@ -22,6 +22,9 @@
       },
       
       shim: {
+      
+         //针对非AMD插件或者模块；AMD模块无法使用，会导致exports,init无法触发，deps无法找到对应依赖
+         
          //Remember: only use shim config for non-AMD scripts,
          
          //scripts that do not already call define(). The shim
