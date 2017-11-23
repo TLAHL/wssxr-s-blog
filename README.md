@@ -96,6 +96,24 @@
       },
       
    });
+   
+   
+   4.  require.js插件: css.js, test.js
+   
+   
+  map：{
+      '*': {  // '*'默认是能在任何模块使用
+         'style' : "libs/requires/css.js",
+         'text': "libs/requirejs/text.js"
+      },
+      'some/oldmodule': {  // 指定模块名的只能在模块内使用
+         'foo': 'foo1.0.js'
+      }
+  } 
+  
+  
+  
+  
 
 
               
